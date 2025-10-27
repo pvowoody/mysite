@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Austin Woodruff — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Austin Woodruff</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="py-5 bg-light">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Hi, I’m Austin Woodruff</h1>
+        <p class="lead">IT student • Ex-soccer player • Developer & Trainer</p>
+        <img src="img/headshot.svg" alt="Austin Woodruff" class="img-fluid my-4" width="200">
+        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+      </div>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m a student who enjoys building software and helping people reach fitness goals. I work with C++, C#, and databases, and run Hustl Fitness as a side project.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2>Projects</h2>
+        <ul>
+          <li>Hotel Management System (Java + MySQL)</li>
+          <li>Fleet Management (RabbitMQ)</li>
+          <li>Forensic Lab Game (C# Windows Forms)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ajw0448@example.com">ajw0448@example.com</a></p>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-light text-center">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Austin Woodruff — Built with Bootstrap 5</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
